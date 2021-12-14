@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
     if (response.ok) {
       return response;
     } else {
-      throw new Error (`The HTTP status of the reponse: ${res.status} (${res.statusText})`)
+      throw new Error (`The HTTP status of the reponse: ${res.status}`)
     }
   })
   .then((response) => response.json())
